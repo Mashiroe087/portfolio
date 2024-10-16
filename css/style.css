@@ -1,0 +1,646 @@
+:root {
+  --lightbg: #b6dcfc;
+  --darkbg: #171717;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  height: 3500px;
+}
+
+body {
+  background-color: var(--darkbg);
+  font-size: 1.2rem;
+  font-family: "League Spartan", system-ui;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+.navbar-brand {
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+#hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.img-siluet {
+  height: 16rem;
+  width: 16rem;
+}
+
+.img-about {
+  height: 29rem;
+  width: 24rem;
+}
+
+#about {
+  padding-top: 4rem;
+}
+
+#about .about-desc h2 {
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+#about .about-desc h3 {
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%,
+  30.3358% {
+    content: "";
+  }
+  1.3789%,
+  28.9569% {
+    content: "P";
+  }
+  2.7578%,
+  27.5780% {
+    content: "Pr";
+  }
+  4.1367%,
+  26.1991% {
+    content: "Pro";
+  }
+  5.5156%,
+  24.8202% {
+    content: "Prog";
+  }
+  6.8945%,
+  23.4413% {
+    content: "Progr";
+  }
+  8.2734%,
+  22.0624% {
+    content: "Progra";
+  }
+  9.6523%,
+  20.6835% {
+    content: "Program";
+  }
+  11.0312%,
+  19.3046% {
+    content: "Programm";
+  }
+  12.4101%,
+  17.9257% {
+    content: "Programme";
+  }
+  13.7890%,
+  16.5468% {
+    content: "Programmer";
+  }
+
+  31.7147%,
+  70.3239% {
+    content: "";
+  }
+  33.0936%,
+  68.9450% {
+    content: "W";
+  }
+  34.4725%,
+  67.5661% {
+    content: "We";
+  }
+  35.8514%,
+  66.1872% {
+    content: "Web";
+  }
+  37.2303%,
+  64.8083% {
+    content: "Web ";
+  }
+  38.6092%,
+  63.4294% {
+    content: "Web D";
+  }
+  39.9881%,
+  62.0505% {
+    content: "Web De";
+  }
+  41.3670%,
+  60.6716% {
+    content: "Web Dev";
+  }
+  42.7459%,
+  59.2927% {
+    content: "Web Deve";
+  }
+  44.1248%,
+  57.9138% {
+    content: "Web Devel";
+  }
+  45.5037%,
+  56.5349% {
+    content: "Web Develo";
+  }
+  46.8826%,
+  55.1560% {
+    content: "Web Develop";
+  }
+  48.2615%,
+  53.7771% {
+    content: "Web Develope";
+  }
+  49.6404%,
+  52.3982% {
+    content: "Web Developer";
+  }
+
+  71.7028%,
+  99.5808% {
+    content: "";
+  }
+  73.0817%,
+  99.2808% {
+    content: "F";
+  }
+  74.4606%,
+  97.9019% {
+    content: "Fr";
+  }
+  75.8395%,
+  96.5230% {
+    content: "Fre";
+  }
+  77.2184%,
+  95.1441% {
+    content: "Free";
+  }
+  78.5973%,
+  93.7652% {
+    content: "Freel";
+  }
+  79.9762%,
+  92.3863% {
+    content: "Freela";
+  }
+  81.3551%,
+  91.0074% {
+    content: "Freelan";
+  }
+  82.7340%,
+  89.6285% {
+    content: "Freelanc";
+  }
+  84.1129%,
+  88.2496% {
+    content: "Freelance";
+  }
+  85.4918%,
+  86.8707% {
+    content: "Freelancer";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "Programmer";
+    }
+    35% {
+      content: "Web Developer";
+    }
+    70% {
+      content: "Freelancer";
+    }
+  }
+
+  .typewriter::before {
+    content: "Programmer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+#about .about-desc p {
+  font-family: "League Spartan", system-ui;
+  text-align: justify;
+  font-size: 25px;
+}
+
+/* From Uiverse.io by Zameerahmad01 */
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: -30px;
+}
+.example-2 .icon-content {
+  margin: 0 5px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 40%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+}
+
+.title-skill {
+  margin-top: 4rem;
+}
+
+.title-skill h2 {
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.nav-tabs {
+  border-color: #023d8a;
+  border-width: 3px;
+  clip-path: polygon(/* Top-left */ 0% var(--curve-size), var(--curve-size) 0, /* top-right */ 100% 0, 100% calc(100% - var(--curve-size)), /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%, /* bottom-right 2 */ 0 100%);
+}
+
+.info-skill .card {
+  width: 265px;
+  height: 100px;
+  /*   height: 254px; */
+  background: #023d8a;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+}
+
+.info-skill .card .row {
+  z-index: 1;
+}
+
+.info-skill .img-skill {
+  margin: 15px 40px;
+  height: 48px;
+}
+
+.info-skill .card-skill {
+  font-size: 22px;
+  color: white;
+  margin-top: 13px;
+  align-items: center;
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.info-skill .card::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(247, 130, 35));
+  height: 300%;
+  animation: rotBGimg 6s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.info-skill .card::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 10px;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+}
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+#project {
+  padding-top: 3rem;
+}
+.my-project h2 {
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.my-project .card {
+  flex: absolute;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 27rem;
+  height: 250px;
+  perspective: 1000px;
+  font-family: "Rubik", system-ui;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* padding: 3px; */
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.flip-card-front {
+  background-color: #2c2323;
+  border: 6px solid #023d8a;
+}
+
+.profile-image img {
+  width: 26.4rem;
+  height: 240px;
+}
+
+.flip-card-back {
+  background-color: rgb(247, 130, 35);
+  border: 6px solid #023d8a;
+  transform: rotateY(180deg);
+  padding: 11px;
+}
+
+.description {
+  margin-top: 45px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.socialbar {
+  background-color: transparent;
+  border-radius: 3em;
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
+  word-spacing: 24px;
+  color: white;
+}
+
+.socialbar svg {
+  transition: 0.4s;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.socialbar svg:hover {
+  color: #023d8a;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+#contact {
+  padding-top: 3rem;
+}
+.contact-title h2 {
+  font-family: "Rubik", system-ui;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* From Uiverse.io by Yaya12085 */
+.contact-form .card {
+  background-color: transparent;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(236, 235, 235, 0.904);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  width: 700px;
+}
+.contact-form .card:hover {
+  box-shadow: 0 3px 20px rgba(1, 67, 248, 0.904);
+}
+
+.contact-form .title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+}
+
+.contact-form span {
+  text-align: justify;
+  font-size: 16px;
+  color: white;
+}
+
+.contact-form .form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .group {
+  position: relative;
+}
+
+.contact-form .form .group label {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contact-form .form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.contact-form .form .group input:focus,
+.form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.contact-form .form .group input:focus + label,
+.form .group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #181818;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-form .form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form .form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form button:hover {
+  background-color: #27408b;
+}
+
+@media (max-width: 900px) {
+  .img-siluet {
+    height: 13rem;
+    width: 13rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .img-siluet {
+    height: 13rem;
+    width: 13rem;
+  }
+}
